@@ -25,9 +25,8 @@ const Catalogo = () => {
       <div className="productos-container">
         {productos.map((producto) => (
           <div key={producto.IdInventario} className="producto-card">
-            <h3>{producto.medicamento.Nombre}</h3>
             <div className="producto-details">
-              <p>ID: {`${producto.IdInventario} - ${producto.idMedicamento} - ${producto.medicamento.Nombre}`}</p>
+              <h4>{`${producto.medicamento.Nombre}`}</h4>
               <p>Cantidad Disponible: {producto.CantidadDisponible}</p>
               <p>Precio de Venta: {producto.PrecioVenta}</p>
               <p>Estado: {producto.Estado === 1 ? 'Activo' : 'Inactivo'}</p>

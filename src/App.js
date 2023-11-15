@@ -1,6 +1,7 @@
 // src/App.js
 import React from 'react';
 import Catalogo from './components/Catalogo';
+import './App.css'; // Asegúrate de tener la ruta correcta
 
 const App = () => {
   // Datos simulados
@@ -12,7 +13,20 @@ const App = () => {
 
   return (
     <div className="app">
-      <Catalogo productos={productos} />
+      <header className="app-header">
+        {/* Contenido del header */}
+        <h1 style={{ color: 'white' }}>Predilecta</h1>
+      </header>
+
+      <main>
+        {/* Renderiza tu componente Catalogo */}
+        <Catalogo productos={productos} />
+      </main>
+
+      <footer className="app-footer">
+        {/* Contenido del footer */}
+        <p>&copy; 2023 PREDILECTA. Todos los derechos reservados.</p>
+      </footer>
     </div>
   );
 };
