@@ -12,7 +12,6 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>Mi Tienda</h1>
       <Catalogo productos={productos} />
     </div>
   );
